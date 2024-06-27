@@ -6,19 +6,19 @@ reminder = "'{task}' is a {priority} priority task that requires immediate atten
 match priority:
     case "high":
         if time_bound == "yes":  
-            print(f"Reminder: ", reminder)
+            print("Reminder: ", reminder)
         elif time_bound == "no":
             print(f"Note: '{task}' is a {priority}. Consider completing it when you have free time.")
     case "medium":
         if time_bound == "yes":  
-            print(f"Reminder: ", reminder)
+            print("Reminder: ", reminder)
         elif time_bound == "no":
             print(f"Note: '{task}' is a {priority}. Consider completing it when you have free time.")
     case "low":
         if time_bound == "no":
             print(f"Note: '{task}' is a {priority} priority task. Consider completing it when you have free time.")
         elif time_bound == "yes":
-            print(f"Reminder: ", reminder)
+            print("Reminder: ", reminder)
     case _:
         print("Invalid Input")
         
