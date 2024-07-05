@@ -1,6 +1,6 @@
 from datetime import *
 
-current_date = datetime.now(tz=None)
+current_date = datetime.now()
 
 def display_current_datetime():
     return current_date
