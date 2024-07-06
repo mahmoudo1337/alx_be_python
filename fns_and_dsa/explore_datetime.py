@@ -1,6 +1,6 @@
 from datetime import *
 
-current_date = datetime.strptime(datetime.now(), "%d/%m/%y %H:%M")
+current_date = datetime.strptime(datetime.now(), "%y/%m/%d")
 
 def display_current_datetime():
     return current_date
