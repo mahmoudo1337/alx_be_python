@@ -13,4 +13,4 @@ class BankAccount:
             return f"Withdrew: ${self.account_balance - amount}"
         
     def display_balance(self):
-        return f"Current Balance: {self.account_balance:.2f}"
+        print( f"Current Balance: {self.account_balance:.2f}")
