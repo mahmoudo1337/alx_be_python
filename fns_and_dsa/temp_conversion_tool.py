@@ -14,12 +14,14 @@ temperature = float(input("Enter the temperature to convert: "))
 if temperature != float:
     print ("Invalid temperature. Please enter a numeric value.")
 
-c_f = upper(input("Is this temperature in Celsius or Fahrenheit? (C/F): "))
+c_f = input("Is this temperature in Celsius or Fahrenheit? (C/F): ")
 
 match c_f:
     case "F":
-        convert_to_celsius()
+        f = convert_to_celsius(temperature)
+        print(f)
     case "C":
-        convert_to_fahrenheit()
+        c = convert_to_fahrenheit(temperature)
+        print(c)
     case _:
         "Invalid input"
